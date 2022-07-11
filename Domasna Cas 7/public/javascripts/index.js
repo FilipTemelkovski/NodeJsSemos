@@ -1,7 +1,5 @@
 function deleteUser(userId) {
-    const form = document.getElementById('form');
     
-
     fetch(`http://localhost:3000/user/${userId}`, {
         method: 'DELETE',
         body: null,

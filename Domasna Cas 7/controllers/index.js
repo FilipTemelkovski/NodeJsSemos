@@ -44,14 +44,11 @@ module.exports = {
     deleteUser: (req, res) => { 
         
         userID = users.findIndex((user => user.id == req.params.id));
-        users[userID] = req.body; 
-        
+         
         users.splice(userID,1);
         
         res.send({
             success: true
         });
-
-
     }
 }
