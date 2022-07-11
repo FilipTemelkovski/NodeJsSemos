@@ -34,7 +34,6 @@ module.exports = {
         //Find index of specific object using findIndex method.    
         
         userIndex = users.findIndex((user => user.id == req.params.id));
-        users[userIndex] = req.body;
 
         res.send({
             success: true
@@ -46,7 +45,6 @@ module.exports = {
         res.render('delete-user', { user: user });
     },
 
-
     deleteUser: (req, res) => { 
         
         userID = users.findIndex((user => user.id == req.params.id));
@@ -57,7 +55,5 @@ module.exports = {
         res.send({
             success: true
         });
-
-
     }
 }
