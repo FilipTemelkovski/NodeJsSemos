@@ -16,6 +16,5 @@ router.get('/', indexController.index) // localhost:3000/
       .get('/user/:id/edit', indexController.editUser)
       .post('/', indexController.postCreate)
       .put('/user/:id', indexController.putEditUser)
-      .get('/user/:id/delete', indexController.viewUserforDelete)
       .delete('/user/:id', indexController.deleteUser)
 module.exports = router;
